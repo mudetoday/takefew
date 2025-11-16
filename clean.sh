@@ -3,4 +3,4 @@
 rm -rf ./pkg
 rm -rf ./obj
 rm -r *.pkg.tar.zst
-rm ./template
+rm ./takefew

@@ -1,12 +1,5 @@
-# Template pacman package
+# takefew
 
-Use this to make your own package quick, or to start new project.
-
-# Future updates
-
-- fix icons (idk how it should work)
-- getopt support
-- x server support
-- plugin support
+Use this to take few words from plain text.
 
 Enjoy in any support from you.

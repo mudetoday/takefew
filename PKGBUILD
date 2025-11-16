@@ -1,8 +1,8 @@
 # Maintainer: Denis "mudetoday" Kiselev <mudetoday@gmail.com>
-pkgname=template
-pkgver=1.1.2
+pkgname=takefew
+pkgver=1.0.0
 pkgrel=1
-pkgdesc="Base template for any package written in C."
+pkgdesc="Use this to take few words from plain text."
 arch=('x86_64')
 url="https://example.com/"
 license=('MIT')
