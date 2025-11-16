@@ -1,6 +1,6 @@
 CC = gcc
 CFLAGS = -Wall -Wextra -Isrc/include
-TARGET = template
+TARGET = takefew
 SRCDIR = src
 OBJDIR = obj
 SOURCES = $(wildcard $(SRCDIR)/*.c)
@@ -24,14 +24,6 @@ clean:
 
 install:
 	install -Dm755 $(TARGET) $(DESTDIR)/usr/bin/$(TARGET)
-	install -Dm644 $(TARGET).desktop $(DESTDIR)/usr/share/applications/$(TARGET).desktop
-	install -Dm644 icons/$(TARGET)-app_16x16.png $(DESTDIR)/usr/share/icons/breeze/apps/16/$(TARGET)-app_16x16.png
-	install -Dm644 icons/$(TARGET)-app_32x32.png $(DESTDIR)/usr/share/icons/breeze/apps/32/$(TARGET)-app_32x32.png
-	install -Dm644 icons/$(TARGET)-app_48x48.png $(DESTDIR)/usr/share/icons/breeze/apps/48/$(TARGET)-app_48x48.png
 
 uninstall:
 	rm -f $(DESTDIR)/usr/bin/$(TARGET)
-	rm -f $(DESTDIR)/usr/share/applications/$(TARGET).desktop
-	rm -f $(DESTDIR)/usr/share/icons/breeze/apps/16/$(TARGET)-app_16x16.png
-	rm -f $(DESTDIR)/usr/share/icons/breeze/apps/32/$(TARGET)-app_32x32.png
-	rm -f $(DESTDIR)/usr/share/icons/breeze/apps/48/$(TARGET)-app_48x48.png
