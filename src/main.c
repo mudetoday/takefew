@@ -29,7 +29,7 @@ int process_string(const char *input, char words[][MAX_WORD_LEN], int max_words)
                                 word_pos = 0;
                         }
                         if (word_pos < MAX_WORD_LEN - 1) {
-                                words[word_count][word_pos++] = tolower((unsigned char)c);
+                                words[word_count][word_pos++] = c;
                         }
                 } else {
                         if (in_word) {
