@@ -6,8 +6,8 @@
 #include "include/help.h"
 #include "include/version.h"
 
-#define MAX_WORDS 1000
-#define MAX_WORD_LEN 100
+#define MAX_WORDS 4096
+#define MAX_WORD_LEN 128
 
 /* Функция для проверки, является ли символ допустимым для слова */
 int is_word_char(char c) {
@@ -78,6 +78,7 @@ int main(int argc, char *argv[])
                                         fprintf(stderr, "Error: count of words must be a above zero!\n");
                                         return 1;
                                 }
+				break;
                         case 's':
                                 use_spaces = 0;
                                 break;
@@ -115,7 +116,7 @@ int main(int argc, char *argv[])
 
                 /* Обработка ввода и извлечение слов */
                 word_count = process_string(input, words, MAX_WORDS);
-//                free(input);
+                free(input);
 
                 /* Определение количества слов для вывода */
                 int words_to_print = word_count;

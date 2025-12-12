@@ -3,5 +3,5 @@
 
 void help()
 {
-        puts(HELP_MESSAGE);
+        printf(HELP_MESSAGE);
 }
