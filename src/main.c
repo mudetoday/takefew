@@ -55,7 +55,7 @@ int main(int argc, char *argv[])
 {
         char words[MAX_WORDS][MAX_WORD_LEN];
         int word_count = 0;
-        int use_spaces = 0;
+        int use_spaces = 1;
         int word_limit = -1;
 
         int opt;
@@ -79,11 +79,11 @@ int main(int argc, char *argv[])
                                         return 1;
                                 }
                         case 's':
-                                use_spaces = 1;
+                                use_spaces = 0;
                                 break;
                         default:
                                 word_limit = MAX_WORDS;
-                                use_spaces = 0;
+                                use_spaces = 1;
                                 break;
                 }
         }
@@ -115,7 +115,7 @@ int main(int argc, char *argv[])
 
                 /* Обработка ввода и извлечение слов */
                 word_count = process_string(input, words, MAX_WORDS);
-                free(input);
+//                free(input);
 
                 /* Определение количества слов для вывода */
                 int words_to_print = word_count;
