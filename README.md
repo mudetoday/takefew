@@ -5,7 +5,7 @@ Use this to take few words from plain text.
 ## Example of usage
 
 ```sh
-$ loremipsum | takefew -s | xargs mkdir
+$ loremipsum | takefew | xargs mkdir
 $ ls
 adipisci  amet  consectetur  dolor  dolorem  est  ipsum  neque  porro  qui  quia  quisquam  sit  velit
 ```
