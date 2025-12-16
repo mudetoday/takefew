@@ -50,6 +50,15 @@ int process_string(const char *input, char words[][MAX_WORD_LEN], int max_words)
         return word_count;
 }
 
+void version()
+{
+        puts(VERSION_MESSAGE);
+}
+
+void help()
+{
+        printf(HELP_MESSAGE);
+}
 
 int main(int argc, char *argv[])
 {

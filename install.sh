@@ -1,3 +1,3 @@
 #!/bin/bash
 
-makepkg -s
+makepkg -si
